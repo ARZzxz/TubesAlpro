@@ -64,7 +64,7 @@ func selsort_cariNilaiTerendah() { apis
 
 func Show_data(data arrM) { // ariz
 	for i := 0; i < data.n; i++ {
-		fmt.Println("Nama Mahasiswa : ", data.tabmhs[i].nama, "NIM Mahasiswa : ", data.tabmhs[i].nim, "Nilai Mahasiswa : ", data.tabmhs[i].nilai, "\n")
+		fmt.Println("Nama Mahasiswa : ", data.tabmhs[i].nama,  " || ", "NIM Mahasiswa : ", data.tabmhs[i].nim,  " || ", "Nilai Mahasiswa : ", data.tabmhs[i].nilai, "\n")
 	}
 }
 
