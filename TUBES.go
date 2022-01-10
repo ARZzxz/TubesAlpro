@@ -32,21 +32,22 @@ func isiData_Mahasiswa(data *arrM, N int) { // ariz
 	var idx_del, i int
 
 	idx_del = Seq_CariMahasiswa()
-}
+} */
 
-/*func Seq_CariMahasiswa(data *arrM, nama string) {
-	var a Mahasiswa
-	var hasil int
+func Seq_CariMahasiswa(data *arrM, skor int) int {
+	var i int
 
-	i:=0
-	for i < data.n && data.[i].nama != nama {
-		i = i + 1
-	} if tab.T[i].nama == nama {
-		return i
-	} else {
-		return -1
+	for i := 0; i == data.n; i++ {
+		if skor == data.tabmhs[i].nilai {
+			fmt.Println(data.tabmhs[i].nama, " ")
+			return i
+		} else if skor != data.tabmhs[i].nilai {
+			fmt.Println("Nama Tidak Ditemukan")
+		}
 	}
+	return i
 }
+
 /*
 func Bin_() { apis
 
